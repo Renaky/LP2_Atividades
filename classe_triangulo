@@ -1,21 +1,13 @@
 package lp2_casa;
-import java.lang.Math;
+
 public class Triangulo {
 
-    private double lado1, lado2, base;
+    private double  base;
     private double altura;
 	
 	// Métodos
-	public void setLado1(double lado1) {
-		if (lado1 > 0) {
-			this.lado1 = lado1;
-		}
-	}
-	public void setLado2(double lado2) {
-		if(lado2 > 0) {
-			this.lado2 = lado2;
-		}
-	}
+	
+    
 	public void setBase(double base) {
 		if(base > 0) {
 			this.base = base;
@@ -24,22 +16,32 @@ public class Triangulo {
 	public void setAltura(double altura) {
 		if(altura>0) {
 			this.altura=altura;
+			
+			
+			
 		}
 	}
+	
 		
 		
-		
-		
-		public void descobreAltura(double altura) {
-			
-			double perimetro = lado1+lado2+base;
-			double x = (perimetro * (perimetro - lado1)  * (perimetro - lado2));
-			altura = Math.sqrt(x);
-		}
 		public double calculaArea() {
 		double area = (base * altura)/2;
 		
 		return area; 
 		}
-    
-    //Codigo não finalizado, 50% funcional
+		
+			public void desenhar() {
+				
+				
+				for(double i= altura; i>=1; i--){
+							
+							for(double j= i; j>=1; j--){
+
+								System.out.print("*");
+							}
+					                System.out.println("");                    
+						}
+		
+}
+		
+}
