@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package lp2_casa;
 
 /**
@@ -25,9 +28,9 @@ public class Main {
 		primeiroRetangulo.setLado(20);
 		
 		double areaPrimeiroRetangulo = primeiroRetangulo.calculaArea();
-		System.out.println("Area Retangulo: "+ areaPrimeiroRetangulo);
+		System.out.println("\nArea Retangulo: "+ areaPrimeiroRetangulo);
 		//desenha retangulo
-		System.out.println("\nDesenho Retangulo: ");
+		System.out.println("Desenho Retangulo: ");
 		primeiroRetangulo.desenhar();
 		
 		//------- Fim Retangulo ----------------------
@@ -35,14 +38,26 @@ public class Main {
 		//Teste da classe Triangulo 
 		Triangulo primeiroTriangulo = new Triangulo();
 		primeiroTriangulo.setBase(10);
-		primeiroTriangulo.setAltura(10);
+		primeiroTriangulo.setAltura(8);
 		
 		double areaPrimeiroTriangulo = primeiroTriangulo.calculaArea();
-		System.out.println("Area Triangulo "+ areaPrimeiroTriangulo);
+		System.out.println("\nArea Triangulo:  "+ areaPrimeiroTriangulo);
 		
 		//Desenha Triangulo
-		System.out.println("\nDesenho Triangulo:  ");
+		System.out.println("Desenho Triangulo: \n ");
 		primeiroTriangulo.desenhar();
+		//---------------- Fim Triangulo------------------- 
+		
+		//------------Teste Classe Circulo-----------------
+		
+		Circulo primeiroCirculo = new Circulo();
+		primeiroCirculo.setRaio(12);
+		
+		double areaPrimeiroCirculo = primeiroCirculo.calculaArea();
+		System.out.println("\nArea do Circulo:  "+ areaPrimeiroCirculo);
+		//Desenha Circulo
+		System.out.println("Desenha Circulo: \n");
+		
 		
 	}
 }
