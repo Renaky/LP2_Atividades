@@ -24,6 +24,14 @@ public class Triangulo {
 	
 		
 		
+		
+		/*public void descobreArea(double area) {
+			
+			double perimetro = lado1+lado2+base;
+			double x = (perimetro * (perimetro - lado1)  * (perimetro - base)*(perimetro - lado2));
+			altura = Math.sqrt(x);
+		}*/
+		
 		public double calculaArea() {
 		double area = (base * altura)/2;
 		
@@ -32,15 +40,23 @@ public class Triangulo {
 		
 			public void desenhar() {
 				
-				
-				for(double i= altura; i>=1; i--){
+				//int numeroLinhas = 10;
+				for(double i=1 ; i<=altura; i++){
 							
-							for(double j= i; j>=1; j--){
+							for(double j= 1; j<=i; j++){
 
 								System.out.print("*");
 							}
 					                System.out.println("");                    
 						}
+				for(double i= altura-1; i>=1; i--){
+					
+					for(double j= i; j>=1; j--){
+
+						System.out.print("*");
+					}
+			                System.out.println("");                    
+				}
 		
 }
 		
