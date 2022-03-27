@@ -41,21 +41,21 @@ public class Main {
 				System.out.println("" + calc.sum(valueOne, valueTwo));
 				break;
 			case 2:
-				System.out.printf("Sub: %2.2f + %2.2f = ",valueOne, valueTwo);
+				System.out.printf("Sub: %2.2f - %2.2f = ",valueOne, valueTwo);
 				System.out.println("" + calc.sub(valueOne, valueTwo));
 				break;
 			case 3:
-				System.out.printf("Div: %2.2f + %2.2f = ",valueOne, valueTwo);
+				System.out.printf("Div: %2.2f / %2.2f = ",valueOne, valueTwo);
 				System.out.println("" + calc.div(valueOne, valueTwo));
 				break;
 			case 4:
-				System.out.printf("Mult: %2.2f + %2.2f = ",valueOne, valueTwo);
+				System.out.printf("Mult: %2.2f * %2.2f = ",valueOne, valueTwo);
 				System.out.println("" + calc.mult(valueOne, valueTwo));
 				break;
 			case 5: 
 				System.out.println("Saindo do programa...");
 				List<String> operations = calc.getLastOperations();
-				System.out.println("---Operações realizadas---");
+				System.out.println("---OperaÃ§Ãµes realizadas---");
 				for (String operation : operations) {
 					System.out.println(operation);
 					break;
