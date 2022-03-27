@@ -14,11 +14,10 @@ public class Main {
 
 		do {
 			try{
-
 				Thread.sleep(1000);
 			}catch(InterruptedException ex){
 				//do stuff
-			}s
+			}
 			System.out.println("---Escolha o operador: 1 para soma || 2 para subtracao || 3 para divisao ||"
 					+"4 para multiplicacao ||5 - sair e informar ultimas operacoes---");
 			Scanner sc3 = new Scanner(System.in);
