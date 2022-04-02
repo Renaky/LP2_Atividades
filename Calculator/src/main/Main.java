@@ -11,9 +11,11 @@ public class Main {
 		Calc calc = new Calc();
 
 		int operator;
+		double valueOne = 0, valueTwo=0;
 
 		do {
 			try{
+
 				Thread.sleep(1000);
 			}catch(InterruptedException ex){
 				//do stuff
@@ -23,15 +25,15 @@ public class Main {
 			Scanner sc3 = new Scanner(System.in);
 			operator = sc3.nextInt();	
 
-
-
+			//if op = 5, go to next step and dont ask numbers value
+			if(operator !=5) {
 			System.out.printf("\nDigite o primeiro valor: ");
 			Scanner sc = new Scanner(System.in);
-			double valueOne = sc.nextDouble();
+			valueOne = sc.nextDouble();
 			Scanner sc2 = new Scanner(System.in);
 			System.out.printf("\nDigite o segundo valor: ");
-			double valueTwo = sc2.nextDouble();
-			
+			valueTwo = sc2.nextDouble();
+			}
 
 
 			switch(operator){
@@ -61,7 +63,6 @@ public class Main {
 				}
 
 			} 
-		}while(operator  !=5);
+		}while(operator  !=5); //While op !=5, will repeat the process, end when =5 and show last operations
 	}
 }
-
